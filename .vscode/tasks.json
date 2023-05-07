@@ -1,0 +1,48 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        
+        {
+            "label": "CMake: Configure",
+            "command": "configure",
+            "type": "cmake",
+            "group": "build",
+            "problemMatcher": [],
+            "detail": "CMake build task"
+        },
+
+        {
+            "label": "CMake: Build",
+            "command": "build",
+            "type": "cmake",
+            "group": "build",
+            "targets": [
+                "ALL_BUILD"
+            ],
+            "problemMatcher": [],
+            "detail": "CMake build task"
+        },
+        
+        {
+            "label": "Conan: Build",
+            "command": "python scripts/build_conan.py",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Conan build task"
+        },
+
+        {
+            "label": "Build",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "Conan: Build",
+                "CMake: Configure",
+                "CMake: Build",
+            ]
+        }
+    
+    ]
+}

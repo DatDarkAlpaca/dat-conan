@@ -1,0 +1,11 @@
+# dat-alpaco
+A wrapper for CMake and the Conan 2.0 package manager.
+
+
+# Getting Started
+1. Clone the repository
+2. Launch the "Conan: Run" configuration
+
+## License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details

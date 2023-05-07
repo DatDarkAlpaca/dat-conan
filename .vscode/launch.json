@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Conan: Run [Release]",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/execute.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "Release"
+            ],
+            "preLaunchTask": "Build"
+        },
+
+        {
+            "name": "Conan: Run [Debug]",
+            "type": "python",
+            "request": "launch",
+            "program": "scripts/execute.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "Debug"
+            ],
+            "preLaunchTask": "Build"
+        }
+
+    ]
+}
