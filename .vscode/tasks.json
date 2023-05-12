@@ -38,6 +38,15 @@
             "label": "Build",
             "dependsOrder": "sequence",
             "dependsOn": [
+                "CMake: Configure",
+                "CMake: Build",
+            ]
+        },
+
+        {
+            "label": "Build + Conan",
+            "dependsOrder": "sequence",
+            "dependsOn": [
                 "Conan: Build",
                 "CMake: Configure",
                 "CMake: Build",
